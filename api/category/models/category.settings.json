@@ -25,13 +25,19 @@
         }
       }
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "name"
-    },
     "articles": {
       "via": "category",
       "collection": "article"
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true,
+      "regex": "^$|^[a-zA-Z/-]+$"
     }
   }
 }

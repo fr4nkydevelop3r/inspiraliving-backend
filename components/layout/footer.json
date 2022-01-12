@@ -2,7 +2,8 @@
   "collectionName": "components_layout_footers",
   "info": {
     "name": "Footer",
-    "icon": "caret-square-down"
+    "icon": "caret-square-down",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,15 +14,28 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
-    "columns": {
-      "type": "component",
-      "repeatable": true,
-      "component": "elements.footer-section"
-    },
-    "smallText": {
+    "description": {
       "type": "string"
+    },
+    "rights": {
+      "type": "text",
+      "required": true
+    },
+    "placeholder": {
+      "type": "string",
+      "required": true
+    },
+    "ctatext": {
+      "type": "text",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.button"
     }
   }
 }

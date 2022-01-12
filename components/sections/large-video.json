@@ -2,7 +2,8 @@
   "collectionName": "components_slices_large_videos",
   "info": {
     "name": "LargeVideo",
-    "icon": "play-circle"
+    "icon": "play-circle",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -19,7 +20,8 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": true
+      "required": true,
+      "pluginOptions": {}
     },
     "poster": {
       "model": "file",
@@ -28,7 +30,13 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.button-link"
     }
   }
 }
