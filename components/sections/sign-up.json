@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_sections_sign_ups",
+  "info": {
+    "name": "SignUp",
+    "icon": "arrow-up"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "subheading": {
+      "type": "text",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.button"
+    }
+  }
+}
